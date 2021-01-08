@@ -3,6 +3,7 @@
 Fluidd requires some basic configuration to applied in order to function correctly. Fluidd should warn you if these are not found in your configuration upon startup.
 
 ## Configuration
+You can also include this in your printer.cfg with `[include client.cfg]`
 
 ### [virtual_sdcard]
 Fluidd requires your printer be setup with `virtual_sdcard`. This allows file uploads to work correctly. If you get a geodes path not found error in Fluidd this is generally the first place to look.
@@ -25,6 +26,8 @@ Enables Pause / Resume functionality within klipper. This is a single block, wit
 
 ## Macros
 These can be assumed sane defaults, but should be checked and modified to your own needs.
+
+You can also include this with `[include client_macros.cfg]` in your printer.cfg
 
 ```yml
 [gcode_macro PAUSE]
